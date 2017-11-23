@@ -15,6 +15,7 @@
 		0934B9121FC6B7EE00D15261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0934B9101FC6B7EE00D15261 /* LaunchScreen.storyboard */; };
 		0934B91D1FC6B7EE00D15261 /* GiveGiftAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B91C1FC6B7EE00D15261 /* GiveGiftAnimationTests.swift */; };
 		0934B9281FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9271FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift */; };
+		0934B9381FC6BDCE00D15261 /* ZYGiftNumLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0934B9231FC6B7EE00D15261 /* GiveGiftAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiveGiftAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0934B9271FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveGiftAnimationUITests.swift; sourceTree = "<group>"; };
 		0934B9291FC6B7EE00D15261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYGiftNumLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0934B9031FC6B7EE00D15261 /* GiveGiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0934B9361FC6BC2B00D15261 /* GiftAnimation */,
 				0934B9041FC6B7EE00D15261 /* AppDelegate.swift */,
 				0934B9061FC6B7EE00D15261 /* ViewController.swift */,
 				0934B9081FC6B7EE00D15261 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				0934B9291FC6B7EE00D15261 /* Info.plist */,
 			);
 			path = GiveGiftAnimationUITests;
+			sourceTree = "<group>";
+		};
+		0934B9361FC6BC2B00D15261 /* GiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */,
+			);
+			path = GiftAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0934B9381FC6BDCE00D15261 /* ZYGiftNumLabel.swift in Sources */,
 				0934B90D1FC6B7EE00D15261 /* GiveGiftAnimation.xcdatamodeld in Sources */,
 				0934B9071FC6B7EE00D15261 /* ViewController.swift in Sources */,
 				0934B9051FC6B7EE00D15261 /* AppDelegate.swift in Sources */,
