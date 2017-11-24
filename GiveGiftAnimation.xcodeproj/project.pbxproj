@@ -16,6 +16,9 @@
 		0934B91D1FC6B7EE00D15261 /* GiveGiftAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B91C1FC6B7EE00D15261 /* GiveGiftAnimationTests.swift */; };
 		0934B9281FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9271FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift */; };
 		0934B9381FC6BDCE00D15261 /* ZYGiftNumLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */; };
+		0934B93A1FC6C60500D15261 /* ZYChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9391FC6C60500D15261 /* ZYChannelView.swift */; };
+		0934B93C1FC6C61600D15261 /* ZYChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934B93B1FC6C61600D15261 /* ZYChannelView.xib */; };
+		0934B93E1FC6CAD000D15261 /* ZYGiveGiftEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		0934B9271FC6B7EE00D15261 /* GiveGiftAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveGiftAnimationUITests.swift; sourceTree = "<group>"; };
 		0934B9291FC6B7EE00D15261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYGiftNumLabel.swift; sourceTree = "<group>"; };
+		0934B9391FC6C60500D15261 /* ZYChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYChannelView.swift; sourceTree = "<group>"; };
+		0934B93B1FC6C61600D15261 /* ZYChannelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYChannelView.xib; sourceTree = "<group>"; };
+		0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYGiveGiftEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				0934B9371FC6BDCE00D15261 /* ZYGiftNumLabel.swift */,
+				0934B9391FC6C60500D15261 /* ZYChannelView.swift */,
+				0934B93B1FC6C61600D15261 /* ZYChannelView.xib */,
+				0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */,
 			);
 			path = GiftAnimation;
 			sourceTree = "<group>";
@@ -247,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0934B9121FC6B7EE00D15261 /* LaunchScreen.storyboard in Resources */,
+				0934B93C1FC6C61600D15261 /* ZYChannelView.xib in Resources */,
 				0934B90F1FC6B7EE00D15261 /* Assets.xcassets in Resources */,
 				0934B90A1FC6B7EE00D15261 /* Main.storyboard in Resources */,
 			);
@@ -273,10 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0934B93E1FC6CAD000D15261 /* ZYGiveGiftEntity.swift in Sources */,
 				0934B9381FC6BDCE00D15261 /* ZYGiftNumLabel.swift in Sources */,
 				0934B90D1FC6B7EE00D15261 /* GiveGiftAnimation.xcdatamodeld in Sources */,
 				0934B9071FC6B7EE00D15261 /* ViewController.swift in Sources */,
 				0934B9051FC6B7EE00D15261 /* AppDelegate.swift in Sources */,
+				0934B93A1FC6C60500D15261 /* ZYChannelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

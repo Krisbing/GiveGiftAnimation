@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="N10-mZ-I9q" customClass="ZYChannelView" customModule="GiveGiftAnimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-ft-6Pp" userLabel="背景">
+                    <rect key="frame" x="0.0" y="0.0" width="196.5" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-QX-SMJ" customClass="ZYGiftNumLabel" customModule="GiveGiftAnimation" customModuleProvider="target">
+                    <rect key="frame" x="211.5" y="0.0" width="37.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-Cb-BX9" userLabel="头像">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6gS-Cb-BX9" secondAttribute="height" multiplier="1:1" id="PaG-Bc-MxD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coderwhy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-Id-QCh">
+                    <rect key="frame" x="54" y="5" width="51.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送出礼物【飞机】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRL-ZP-1VS">
+                    <rect key="frame" x="54" y="27.5" width="98.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sIV-Yb-aU6" userLabel="礼物">
+                    <rect key="frame" x="152.5" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sIV-Yb-aU6" secondAttribute="height" multiplier="1:1" id="B7n-iM-Fgp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YRf-Id-QCh" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" constant="5" id="2Fo-95-n97"/>
+                <constraint firstItem="sYg-QX-SMJ" firstAttribute="leading" secondItem="sIV-Yb-aU6" secondAttribute="trailing" constant="15" id="A3S-8N-56F"/>
+                <constraint firstAttribute="bottom" secondItem="bRL-ZP-1VS" secondAttribute="bottom" constant="2" id="AiF-tt-PIY"/>
+                <constraint firstAttribute="bottom" secondItem="6gS-Cb-BX9" secondAttribute="bottom" id="BLM-EY-exH"/>
+                <constraint firstItem="UTY-ft-6Pp" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="DJp-GK-Efm"/>
+                <constraint firstItem="sYg-QX-SMJ" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="Hhm-GS-VnX"/>
+                <constraint firstItem="bRL-ZP-1VS" firstAttribute="leading" secondItem="6gS-Cb-BX9" secondAttribute="trailing" constant="10" id="RtQ-gf-9s0"/>
+                <constraint firstItem="sIV-Yb-aU6" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="Uv2-Vn-Raz"/>
+                <constraint firstItem="YRf-Id-QCh" firstAttribute="leading" secondItem="6gS-Cb-BX9" secondAttribute="trailing" constant="10" id="Vve-XT-pLH"/>
+                <constraint firstItem="sIV-Yb-aU6" firstAttribute="leading" secondItem="bRL-ZP-1VS" secondAttribute="trailing" id="YZz-Hg-CqW"/>
+                <constraint firstAttribute="bottom" secondItem="UTY-ft-6Pp" secondAttribute="bottom" id="c6l-yN-qu4"/>
+                <constraint firstItem="sYg-QX-SMJ" firstAttribute="leading" secondItem="UTY-ft-6Pp" secondAttribute="trailing" constant="15" id="ceB-Fw-eP3"/>
+                <constraint firstItem="6gS-Cb-BX9" firstAttribute="leading" secondItem="N10-mZ-I9q" secondAttribute="leading" id="cpH-S8-OUw"/>
+                <constraint firstItem="UTY-ft-6Pp" firstAttribute="leading" secondItem="N10-mZ-I9q" secondAttribute="leading" id="j72-0x-iaC"/>
+                <constraint firstItem="6gS-Cb-BX9" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="vbc-Gp-CLo"/>
+                <constraint firstAttribute="bottom" secondItem="sIV-Yb-aU6" secondAttribute="bottom" id="xiV-7w-deq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Kxo-3A-4Eg"/>
+            <connections>
+                <outlet property="bgView" destination="UTY-ft-6Pp" id="gWJ-ud-bJa"/>
+                <outlet property="digitLabel" destination="sYg-QX-SMJ" id="iyf-Bi-GAK"/>
+                <outlet property="giftDescLabel" destination="bRL-ZP-1VS" id="BRz-m4-GUL"/>
+                <outlet property="giftImageView" destination="sIV-Yb-aU6" id="O8W-M2-ZfM"/>
+                <outlet property="iconImageView" destination="6gS-Cb-BX9" id="oUz-3f-6cB"/>
+                <outlet property="senderLabel" destination="YRf-Id-QCh" id="kNr-4s-19i"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="136"/>
+        </view>
+    </objects>
+</document>
