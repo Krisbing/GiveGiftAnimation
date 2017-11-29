@@ -19,6 +19,7 @@
 		0934B93A1FC6C60500D15261 /* ZYChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B9391FC6C60500D15261 /* ZYChannelView.swift */; };
 		0934B93C1FC6C61600D15261 /* ZYChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934B93B1FC6C61600D15261 /* ZYChannelView.xib */; };
 		0934B93E1FC6CAD000D15261 /* ZYGiveGiftEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */; };
+		0981FFF51FCE8E8F00151ED7 /* ZYContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981FFF41FCE8E8F00151ED7 /* ZYContainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0934B9391FC6C60500D15261 /* ZYChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYChannelView.swift; sourceTree = "<group>"; };
 		0934B93B1FC6C61600D15261 /* ZYChannelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYChannelView.xib; sourceTree = "<group>"; };
 		0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYGiveGiftEntity.swift; sourceTree = "<group>"; };
+		0981FFF41FCE8E8F00151ED7 /* ZYContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYContainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				0934B9391FC6C60500D15261 /* ZYChannelView.swift */,
 				0934B93B1FC6C61600D15261 /* ZYChannelView.xib */,
 				0934B93D1FC6CAD000D15261 /* ZYGiveGiftEntity.swift */,
+				0981FFF41FCE8E8F00151ED7 /* ZYContainView.swift */,
 			);
 			path = GiftAnimation;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0981FFF51FCE8E8F00151ED7 /* ZYContainView.swift in Sources */,
 				0934B93E1FC6CAD000D15261 /* ZYGiveGiftEntity.swift in Sources */,
 				0934B9381FC6BDCE00D15261 /* ZYGiftNumLabel.swift in Sources */,
 				0934B90D1FC6B7EE00D15261 /* GiveGiftAnimation.xcdatamodeld in Sources */,

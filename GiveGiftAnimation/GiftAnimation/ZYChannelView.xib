@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,8 +20,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="196.5" height="44"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-QX-SMJ" customClass="ZYGiftNumLabel" customModule="GiveGiftAnimation" customModuleProvider="target">
-                    <rect key="frame" x="211.5" y="0.0" width="37.5" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-QX-SMJ" customClass="ZYGiftNumLabel" customModule="GiveGiftAnimation" customModuleProvider="target">
+                    <rect key="frame" x="211.5" y="0.0" width="22.5" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -75,10 +75,10 @@
             <viewLayoutGuide key="safeArea" id="Kxo-3A-4Eg"/>
             <connections>
                 <outlet property="bgView" destination="UTY-ft-6Pp" id="gWJ-ud-bJa"/>
-                <outlet property="digitLabel" destination="sYg-QX-SMJ" id="iyf-Bi-GAK"/>
                 <outlet property="giftDescLabel" destination="bRL-ZP-1VS" id="BRz-m4-GUL"/>
                 <outlet property="giftImageView" destination="sIV-Yb-aU6" id="O8W-M2-ZfM"/>
                 <outlet property="iconImageView" destination="6gS-Cb-BX9" id="oUz-3f-6cB"/>
+                <outlet property="numLabel" destination="sYg-QX-SMJ" id="B8B-vd-aqz"/>
                 <outlet property="senderLabel" destination="YRf-Id-QCh" id="kNr-4s-19i"/>
             </connections>
             <point key="canvasLocation" x="45" y="136"/>
