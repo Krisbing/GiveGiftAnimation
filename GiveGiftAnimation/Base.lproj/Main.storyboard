@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,20 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学姐是sb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggn-Re-DaA" customClass="ZYGiftNumLabel" customModule="GiveGiftAnimation" customModuleProvider="target">
-                                <rect key="frame" x="42" y="220" width="236" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdS-JW-aJJ">
+                                <rect key="frame" x="50" y="587" width="58.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7We-1u-ck0"/>
+                                </constraints>
+                                <state key="normal" title="礼物1"/>
+                                <connections>
+                                    <action selector="clickGiftOneBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKj-Vt-twu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICH-Gj-tQX">
+                                <rect key="frame" x="266.5" y="587" width="58.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5sX-Kf-Yl9"/>
+                                </constraints>
+                                <state key="normal" title="礼物3"/>
+                                <connections>
+                                    <action selector="clickGiftThreeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXr-ky-heT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-Hc-R3e">
+                                <rect key="frame" x="158.5" y="587" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dkh-rq-vc1"/>
+                                </constraints>
+                                <state key="normal" title="礼物2"/>
+                                <connections>
+                                    <action selector="clickGiftTwoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCx-nf-mns"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jdS-JW-aJJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="TKH-Zv-LWo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdS-JW-aJJ" secondAttribute="bottom" constant="50" id="Wlp-2g-goB"/>
+                            <constraint firstItem="7EQ-Hc-R3e" firstAttribute="width" secondItem="jdS-JW-aJJ" secondAttribute="width" id="a50-Oj-iGs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ICH-Gj-tQX" secondAttribute="bottom" constant="50" id="a7I-tK-lVS"/>
+                            <constraint firstItem="ICH-Gj-tQX" firstAttribute="leading" secondItem="7EQ-Hc-R3e" secondAttribute="trailing" constant="50" id="gx8-V3-LfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICH-Gj-tQX" secondAttribute="trailing" constant="50" id="h4G-08-otp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7EQ-Hc-R3e" secondAttribute="bottom" constant="50" id="lzG-fa-5me"/>
+                            <constraint firstItem="ICH-Gj-tQX" firstAttribute="width" secondItem="jdS-JW-aJJ" secondAttribute="width" id="yNL-4Q-mus"/>
+                            <constraint firstItem="7EQ-Hc-R3e" firstAttribute="leading" secondItem="jdS-JW-aJJ" secondAttribute="trailing" constant="50" id="z4X-5U-8tL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="giftLabel" destination="Ggn-Re-DaA" id="sdz-dI-Spb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

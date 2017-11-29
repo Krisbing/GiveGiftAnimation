@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kChannelViewCount = 3
+private let kChannelViewCount = 2
 private let kChannelViewH: CGFloat = 50
 private let kChannelViewMargin: CGFloat = 10
 
@@ -53,9 +53,9 @@ extension ZYContainView {
                 channelView.giftEntity = entity
                 
                 //遍历缓存数组，判断是否有和选中的entity相同的模型
-                guard let tmpCacheArr = self?.entityCacheArr else {return}
-                for (i, tmpEntity) in tmpCacheArr.reversed().enumerated() {
-                    if tmpEntity.isEqual(entity) {
+                for i in (0..<(self?.entityCacheArr.count ?? 0)).reversed() {
+                    let tmpEntity = self?.entityCacheArr[i]
+                    if entity.isEqual(tmpEntity) {
                         channelView.addOneToCache()
                         self?.entityCacheArr.remove(at: i)
                     }

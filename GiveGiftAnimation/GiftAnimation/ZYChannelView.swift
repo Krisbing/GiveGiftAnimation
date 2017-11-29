@@ -89,9 +89,10 @@ extension ZYChannelView {
 extension ZYChannelView {
     fileprivate func showAnimation() {
         status = .animating
+        numLabel.text = "  X1  "
         UIView.animate(withDuration: 0.25, animations: {
             self.alpha = 1
-            self.frame.origin.y = 0
+            self.frame.origin.x = 0
         }) { (isFinished) in
             self.showNumLabelAnimation()
         }
@@ -99,7 +100,7 @@ extension ZYChannelView {
     
     fileprivate func showNumLabelAnimation() {
         currentNum += 1
-        numLabel.text = "X\(currentNum)"
+        numLabel.text = "  X\(currentNum)  "
         numLabel.showNumAnimation {[weak self] in
             guard let cacheNum = self?.cacheNum else {return}
             if cacheNum > 0 {
