@@ -24,7 +24,7 @@ class ZYGiftNumLabel: UILabel {
     }
     
     func showNumAnimation(_ finishedBlock: @escaping ()->()) {
-        UIView.animateKeyframes(withDuration: 0.5, delay: 0, options: [], animations: {
+        UIView.animateKeyframes(withDuration: 0.25, delay: 0, options: [], animations: {
             UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: {
                 self.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
             })

@@ -31,12 +31,13 @@ class ZYChannelView: UIView {
     var giftEntity: ZYGiveGiftEntity? {
         didSet{
             guard let entity = giftEntity else {return}
-            
+            status = .animating
+            currentNum = 0
+            cacheNum = 0
             iconImageView.image = UIImage(named: entity.senderURL)
             senderLabel.text = entity.senderName
             giftDescLabel.text = "送出礼物：【\(entity.giftName)】"
             giftImageView.image = UIImage(named: entity.giftURL)
-            
             showAnimation()
         }
     }
@@ -76,8 +77,8 @@ class ZYChannelView: UIView {
 extension ZYChannelView {
     func addOneToCache() {
         if status == .willEnd {
-            showNumLabelAnimation()
             NSObject.cancelPreviousPerformRequests(withTarget: self)
+            showNumLabelAnimation()
         }
         else {
             cacheNum += 1
@@ -88,7 +89,7 @@ extension ZYChannelView {
 // MARK: - 动画
 extension ZYChannelView {
     fileprivate func showAnimation() {
-        status = .animating
+        
         numLabel.text = "  X1  "
         UIView.animate(withDuration: 0.25, animations: {
             self.alpha = 1
@@ -99,6 +100,9 @@ extension ZYChannelView {
     }
     
     fileprivate func showNumLabelAnimation() {
+        status = .animating         //注意，这里每次递归都进行状态初始化
+                                    //主要为了防止在状态置为willEnd延时3秒后执行showEndAnimation的时候，再次addOneToCache导致状态出问题
+                                    //主要是想说明，动画肯定是在主线程执行的，动画的执行有0.25秒的持续过程，这个地方如果不做好相关状态的判断，会出现bug
         currentNum += 1
         numLabel.text = "  X\(currentNum)  "
         numLabel.showNumAnimation {[weak self] in
@@ -108,15 +112,25 @@ extension ZYChannelView {
                 self?.showNumLabelAnimation()
             }
             else {
-                self?.status = .willEnd
-                self?.perform(#selector(self?.showEndAnimation), with: nil, afterDelay: 3)
+                if self?.giftEntity != nil {
+                    self?.status = .willEnd
+                    self?.perform(#selector(self?.showEndAnimation), with: nil, afterDelay: 3)
+                }
+                else {
+                    self?.showEndAnimation()
+                }
+                
             }
         }
     }
     
     @objc fileprivate func showEndAnimation() {
-        status = .endAnimating
         
+        if status != .willEnd {
+            return
+        }
+        
+        status = .endAnimating
         UIView.animate(withDuration: 0.25, animations: {
             self.frame.origin.x = UIScreen.main.bounds.width
             self.alpha = 0
