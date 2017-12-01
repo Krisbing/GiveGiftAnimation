@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func clickGiftOneBtn(_ sender: Any) {
-        let gift1 = ZYGiveGiftEntity(senderName: "coderwhy", senderURL: "icon4", giftName: "火箭", giftURL: "prop_b")
+        let gift1 = ZYGiveGiftEntity(senderName: "coderwhy", senderURL: "icon1", giftName: "火箭", giftURL: "prop_b")
         giftContainerView.showGiftEntity(entity: gift1)
     }
     

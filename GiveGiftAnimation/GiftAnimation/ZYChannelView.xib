@@ -21,12 +21,12 @@
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" X1 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-QX-SMJ" customClass="ZYGiftNumLabel" customModule="GiveGiftAnimation" customModuleProvider="target">
-                    <rect key="frame" x="221.5" y="0.0" width="31.5" height="24"/>
+                    <rect key="frame" x="221.5" y="10" width="31.5" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-Cb-BX9" userLabel="头像">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-Cb-BX9" userLabel="头像">
                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="6gS-Cb-BX9" secondAttribute="height" multiplier="1:1" id="PaG-Bc-MxD"/>
@@ -58,7 +58,7 @@
                 <constraint firstAttribute="bottom" secondItem="bRL-ZP-1VS" secondAttribute="bottom" constant="2" id="AiF-tt-PIY"/>
                 <constraint firstAttribute="bottom" secondItem="6gS-Cb-BX9" secondAttribute="bottom" id="BLM-EY-exH"/>
                 <constraint firstItem="UTY-ft-6Pp" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="DJp-GK-Efm"/>
-                <constraint firstItem="sYg-QX-SMJ" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" id="Hhm-GS-VnX"/>
+                <constraint firstItem="sYg-QX-SMJ" firstAttribute="centerY" secondItem="N10-mZ-I9q" secondAttribute="centerY" id="Hqp-zH-lM1"/>
                 <constraint firstItem="bRL-ZP-1VS" firstAttribute="leading" secondItem="6gS-Cb-BX9" secondAttribute="trailing" constant="10" id="RtQ-gf-9s0"/>
                 <constraint firstItem="sIV-Yb-aU6" firstAttribute="top" secondItem="N10-mZ-I9q" secondAttribute="top" constant="-5" id="Uv2-Vn-Raz"/>
                 <constraint firstItem="YRf-Id-QCh" firstAttribute="leading" secondItem="6gS-Cb-BX9" secondAttribute="trailing" constant="10" id="Vve-XT-pLH"/>
@@ -84,4 +84,7 @@
             <point key="canvasLocation" x="45" y="136"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon1" width="154" height="154"/>
+    </resources>
 </document>
